@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -364,7 +365,7 @@ p {
 }
 
 #resume .resume-item h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -390,6 +391,7 @@ p {
 #resume .resume-item p {
     color: white;
     text-align: left;
+    
 }
 
 
@@ -405,9 +407,101 @@ p {
     z-index: -1;
 }
 
+/*Education*/
+
+#edu {
+    background-color: white;
+}
+#edu .edu {
+    flex-direction: column;
+    text-align: cemter;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#edu .edu-top {
+    width: 800px;
+    margin: 0 auto;
+}
+#edu .edu-bottom {
+    display: table-row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: center;
+    margin-top: 50px;
+}
+#edu .edu-school {
+    flex-basis: 80%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, rgba(25, 106, 131, 0.932), rgb(223, 80, 80));
+    background-size: cover;
+    margin: 10px 5%;
+    border: 2px solid black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#edu .edu-school:nth-child(even) {
+    background-image: linear-gradient(to bottom right, rgb(31, 100, 31), rgba(219, 201, 99, 0.81));
+}
+#edu .edu-bottom .icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#edu .edu-school h2 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#edu .edu-school h3 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+    display: inline-;
+}
+#edu .edu-school p {
+    color: white;
+    text-align: left;
+    
+}
+
+
+#edu .edu-school::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #dddddd 100%);
+    opacity: .8;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
 
 /*Projects Section*/
-
+#projects {
+    background-color: #dfdfdf;
+}
 
 
 #projects .projects {
@@ -456,14 +550,14 @@ p {
 #projects .project-info h1 {
     font-size: 4rem;
     font-weight: 500;
-
+    text-align: center;
 }
 
 #projects .project-info h2 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
-
+    text-align: center;
 }
 
 #projects .project-info p {
@@ -557,7 +651,7 @@ p {
 
 
 #contact {
-    background-color: #dfdfdf;
+    background-color: white;
 }
 #contact .contact {
     flex-direction: column;
@@ -761,6 +855,17 @@ p {
         text-align: left;
     
     }
+
+    #edu .edu {
+
+    }
+
+    #edu .edu-bottom .edu-school {
+        margin: 20px;
+        
+    }
+
+
 
     #contact .contact {
         flex-direction: column;
