@@ -371,8 +371,22 @@ p {
 }
 
 #resume .resume-item h3 {
-    color: white;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
 }
+
+#resume .resume-item h4 {
+    color:white;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
 #resume .resume-item p {
     color: white;
     text-align: left;
